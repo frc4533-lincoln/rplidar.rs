@@ -2,7 +2,6 @@ use super::ring_byte_buffer::RingByteBuffer;
 use super::prelude::*;
 use std::io;
 use std::time::{ Instant, Duration };
-use failure::{Error, Fail};
 
 const DEFAULT_CHANNEL_READ_BUFFER_SIZE: usize = 1024;
 

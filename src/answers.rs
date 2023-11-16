@@ -128,7 +128,7 @@ pub struct RplidarResponseUltraCapsuleMeasurementNodes {
     pub s_checksum_1: u8,
     pub s_checksum_2: u8,
     pub start_angle_sync_q6: u16,
-    pub ultra_cabins: [u32;32],
+    pub ultra_cabins: [u32; 32],
 }
 
 /// Answer type for getting LIDAR configuration
@@ -142,4 +142,4 @@ pub const RPLIDAR_ANS_TYPE_GET_LIDAR_CONF : u8 = 0x20;
 pub const RPLIDAR_ANS_TYPE_ACC_BOARD_FLAG : u8 = 0xFF;
 
 /// Flag indicate that accessory board support motor control
-pub const RPLIDAR_RESP_ACC_BOARD_FLAG_MOTOR_CTRL_SUPPORT_MASK : u32 = (0x1);
+pub const RPLIDAR_RESP_ACC_BOARD_FLAG_MOTOR_CTRL_SUPPORT_MASK : u32 = 0x1;

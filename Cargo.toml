@@ -6,7 +6,7 @@ license = "BSD-2-Clause"
 repository = "https://github.com/cnwzhjs/rplidar.rs"
 keywords = ["Slamtec", "Rplidar", "Driver"]
 authors = ["Tony Huang <tony@slamtec.com>"]
-edition = "2018"
+edition = "2021"
 documentation = "https://docs.rs/rplidar_drv"
 exclude = [".gitignore", ".travis.yml", ".cargo/config"]
 

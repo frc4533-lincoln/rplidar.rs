@@ -27,7 +27,7 @@ fn main() {
         .expect("Invalid value for baudrate");
 
     let s = SerialPortSettings {
-        baud_rate: baud_rate,
+        baud_rate,
         data_bits: DataBits::Eight,
         flow_control: FlowControl::None,
         parity: Parity::None,
@@ -42,7 +42,7 @@ fn main() {
         .write_data_terminal_ready(false)
         .expect("failed to clear DTR");
 
-    let channel = Channel::<RplidarHostProtocol, serialport::SerialPort>::new(
+    let channel = Channel::<RplidarHostProtocol, dyn serialport::SerialPort>::new(
         RplidarHostProtocol::new(),
         serial_port,
     );
